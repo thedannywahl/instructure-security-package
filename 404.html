@@ -1,0 +1,40 @@
+<!--// This file is required for github pages to redirect to the correct path //-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="inst.bid">
+    <meta name="apple-mobile-web-app-title" content="inst.bid">
+    <meta name="theme-color" content="#287A9F">
+    <meta name="msapplication-navbutton-color" content="#287A9F">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Instructure product compliance information" />
+
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>Redirecting...</title>
+    <script>
+        const prefix = '/#'
+        const protocol = window.location.protocol + '//'
+        const host = window.location.hostname
+        const path = window.location.pathname
+        const redirectURL = protocol + host + prefix + path
+        window.location.href = redirectURL
+    </script>
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app. To request compliance information directly ask your
+        Customer Success Manager, or email <a href="mailto:info@instructure.com">info@instructure.com</a></noscript>
+    <div id="root"></div>
+</body>
+
+</html>
