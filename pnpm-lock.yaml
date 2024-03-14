@@ -7,10 +7,10 @@ settings:
 dependencies:
   '@instructure/emotion':
     specifier: ^8.53.2
-    version: 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+    version: 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
   '@instructure/ui':
     specifier: ^8.53.2
-    version: 8.53.2(@lezer/common@1.2.1)(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)(sinon@17.0.1)
+    version: 8.53.2(@lezer/common@1.2.1)(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)(sinon@17.0.1)
   '@instructure/ui-react-utils':
     specifier: ^8.53.2
     version: 8.53.2(react-dom@18.2.0)(react@18.2.0)
@@ -19,7 +19,7 @@ dependencies:
     version: 3.0.1(webpack@5.90.3)
   '@mdx-js/react':
     specifier: ^3.0.1
-    version: 3.0.1(@types/react@18.2.65)(react@18.2.0)
+    version: 3.0.1(@types/react@18.2.66)(react@18.2.0)
   '@next/mdx':
     specifier: ^14.1.3
     version: 14.1.3(@mdx-js/loader@3.0.1)(@mdx-js/react@3.0.1)
@@ -56,8 +56,8 @@ devDependencies:
     specifier: ^20.11.27
     version: 20.11.27
   '@types/react':
-    specifier: ^18.2.65
-    version: 18.2.65
+    specifier: ^18.2.66
+    version: 18.2.66
   '@types/react-dom':
     specifier: ^18.2.22
     version: 18.2.22
@@ -501,8 +501,8 @@ packages:
     dev: true
     optional: true
 
-  /@codemirror/autocomplete@6.14.0(@codemirror/language@6.10.1)(@codemirror/state@6.4.1)(@codemirror/view@6.25.1)(@lezer/common@1.2.1):
-    resolution: {integrity: sha512-Kx9BCSOLKmqNXEvmViuzsBQJ2VEa/wWwOATNpixOa+suttTV3rDnAUtAIt5ObAUFjXvZakWfFfF/EbxELnGLzQ==}
+  /@codemirror/autocomplete@6.15.0(@codemirror/language@6.10.1)(@codemirror/state@6.4.1)(@codemirror/view@6.26.0)(@lezer/common@1.2.1):
+    resolution: {integrity: sha512-G2Zm0mXznxz97JhaaOdoEG2cVupn4JjPaS4AcNvZzhOsnnG9YVN68VzfoUw6dYTsIxT6a/cmoFEN47KAWhXaOg==}
     peerDependencies:
       '@codemirror/language': ^6.0.0
       '@codemirror/state': ^6.0.0
@@ -511,7 +511,7 @@ packages:
     dependencies:
       '@codemirror/language': 6.10.1
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.25.1
+      '@codemirror/view': 6.26.0
       '@lezer/common': 1.2.1
     dev: false
 
@@ -520,14 +520,14 @@ packages:
     dependencies:
       '@codemirror/language': 6.10.1
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.25.1
+      '@codemirror/view': 6.26.0
       '@lezer/common': 1.2.1
     dev: false
 
-  /@codemirror/lang-css@6.2.1(@codemirror/view@6.25.1):
+  /@codemirror/lang-css@6.2.1(@codemirror/view@6.26.0):
     resolution: {integrity: sha512-/UNWDNV5Viwi/1lpr/dIXJNWiwDxpw13I4pTUAsNxZdg6E0mI2kTQb0P2iHczg1Tu+H4EBgJR+hYhKiHKko7qg==}
     dependencies:
-      '@codemirror/autocomplete': 6.14.0(@codemirror/language@6.10.1)(@codemirror/state@6.4.1)(@codemirror/view@6.25.1)(@lezer/common@1.2.1)
+      '@codemirror/autocomplete': 6.15.0(@codemirror/language@6.10.1)(@codemirror/state@6.4.1)(@codemirror/view@6.26.0)(@lezer/common@1.2.1)
       '@codemirror/language': 6.10.1
       '@codemirror/state': 6.4.1
       '@lezer/common': 1.2.1
@@ -539,12 +539,12 @@ packages:
   /@codemirror/lang-html@6.4.8:
     resolution: {integrity: sha512-tE2YK7wDlb9ZpAH6mpTPiYm6rhfdQKVDa5r9IwIFlwwgvVaKsCfuKKZoJGWsmMZIf3FQAuJ5CHMPLymOtg1hXw==}
     dependencies:
-      '@codemirror/autocomplete': 6.14.0(@codemirror/language@6.10.1)(@codemirror/state@6.4.1)(@codemirror/view@6.25.1)(@lezer/common@1.2.1)
-      '@codemirror/lang-css': 6.2.1(@codemirror/view@6.25.1)
+      '@codemirror/autocomplete': 6.15.0(@codemirror/language@6.10.1)(@codemirror/state@6.4.1)(@codemirror/view@6.26.0)(@lezer/common@1.2.1)
+      '@codemirror/lang-css': 6.2.1(@codemirror/view@6.26.0)
       '@codemirror/lang-javascript': 6.2.2
       '@codemirror/language': 6.10.1
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.25.1
+      '@codemirror/view': 6.26.0
       '@lezer/common': 1.2.1
       '@lezer/css': 1.1.8
       '@lezer/html': 1.3.9
@@ -553,11 +553,11 @@ packages:
   /@codemirror/lang-javascript@6.2.2:
     resolution: {integrity: sha512-VGQfY+FCc285AhWuwjYxQyUQcYurWlxdKYT4bqwr3Twnd5wP5WSeu52t4tvvuWmljT4EmgEgZCqSieokhtY8hg==}
     dependencies:
-      '@codemirror/autocomplete': 6.14.0(@codemirror/language@6.10.1)(@codemirror/state@6.4.1)(@codemirror/view@6.25.1)(@lezer/common@1.2.1)
+      '@codemirror/autocomplete': 6.15.0(@codemirror/language@6.10.1)(@codemirror/state@6.4.1)(@codemirror/view@6.26.0)(@lezer/common@1.2.1)
       '@codemirror/language': 6.10.1
       '@codemirror/lint': 6.5.0
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.25.1
+      '@codemirror/view': 6.26.0
       '@lezer/common': 1.2.1
       '@lezer/javascript': 1.4.13
     dev: false
@@ -572,11 +572,11 @@ packages:
   /@codemirror/lang-markdown@6.2.4:
     resolution: {integrity: sha512-UghkA1vSMs8bT7RSZM6vsIocigyah2bV00eRQuZy76401UmFZdsTsbQNBGdyxRQDOLeEvF5iFwap0BM8LKyd+g==}
     dependencies:
-      '@codemirror/autocomplete': 6.14.0(@codemirror/language@6.10.1)(@codemirror/state@6.4.1)(@codemirror/view@6.25.1)(@lezer/common@1.2.1)
+      '@codemirror/autocomplete': 6.15.0(@codemirror/language@6.10.1)(@codemirror/state@6.4.1)(@codemirror/view@6.26.0)(@lezer/common@1.2.1)
       '@codemirror/lang-html': 6.4.8
       '@codemirror/language': 6.10.1
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.25.1
+      '@codemirror/view': 6.26.0
       '@lezer/common': 1.2.1
       '@lezer/markdown': 1.2.0
     dev: false
@@ -585,7 +585,7 @@ packages:
     resolution: {integrity: sha512-5GrXzrhq6k+gL5fjkAwt90nYDmjlzTIJV8THnxNFtNKWotMIlzzN+CpqxqwXOECnUdOndmSeWntVrVcv5axWRQ==}
     dependencies:
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.25.1
+      '@codemirror/view': 6.26.0
       '@lezer/common': 1.2.1
       '@lezer/highlight': 1.1.6
       '@lezer/lr': 1.4.0
@@ -602,7 +602,7 @@ packages:
     resolution: {integrity: sha512-+5YyicIaaAZKU8K43IQi8TBy6mF6giGeWAH7N96Z5LC30Wm5JMjqxOYIE9mxwMG1NbhT2mA3l9hA4uuKUM3E5g==}
     dependencies:
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.25.1
+      '@codemirror/view': 6.26.0
       crelt: 1.0.6
     dev: false
 
@@ -610,7 +610,7 @@ packages:
     resolution: {integrity: sha512-rpMgcsh7o0GuCDUXKPvww+muLA1pDJaFrpq/CCHtpQJYz8xopu4D1hPcKRoDD0YlF8gZaqTNIRa4VRBWyhyy7Q==}
     dependencies:
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.25.1
+      '@codemirror/view': 6.26.0
       crelt: 1.0.6
     dev: false
 
@@ -618,8 +618,8 @@ packages:
     resolution: {integrity: sha512-QkEyUiLhsJoZkbumGZlswmAhA7CBU02Wrz7zvH4SrcifbsqwlXShVXg65f3v/ts57W3dqyamEriMhij1Z3Zz4A==}
     dev: false
 
-  /@codemirror/view@6.25.1:
-    resolution: {integrity: sha512-2LXLxsQnHDdfGzDvjzAwZh2ZviNJm7im6tGpa0IONIDnFd8RZ80D2SNi8PDi6YjKcMoMRK20v6OmKIdsrwsyoQ==}
+  /@codemirror/view@6.26.0:
+    resolution: {integrity: sha512-nSSmzONpqsNzshPOxiKhK203R6BvABepugAe34QfQDbNDslyjkqBuKgrK5ZBvqNXpfxz5iLrlGTmEfhbQyH46A==}
     dependencies:
       '@codemirror/state': 6.4.1
       style-mod: 4.1.2
@@ -666,7 +666,7 @@ packages:
     resolution: {integrity: sha512-W2P2c/VRW1/1tLox0mVUalvnWXxavmv/Oum2aPsRcoDJuob75FC3Y8FbpfLwUegRcxINtGUMPq0tFCvYNTBXNA==}
     dev: false
 
-  /@emotion/react@11.11.4(@types/react@18.2.65)(react@18.2.0):
+  /@emotion/react@11.11.4(@types/react@18.2.66)(react@18.2.0):
     resolution: {integrity: sha512-t8AjMlF0gHpvvxk5mAtCqR4vmxiGHCeJBaQO6gncUSdklELOgtwjerNY2yuJNfwnc6vi16U/+uMF+afIawJ9iw==}
     peerDependencies:
       '@types/react': '*'
@@ -682,7 +682,7 @@ packages:
       '@emotion/use-insertion-effect-with-fallbacks': 1.0.1(react@18.2.0)
       '@emotion/utils': 1.2.1
       '@emotion/weak-memoize': 0.3.1
-      '@types/react': 18.2.65
+      '@types/react': 18.2.66
       hoist-non-react-statics: 3.3.2
       react: 18.2.0
     dev: false
@@ -819,13 +819,13 @@ packages:
       '@babel/runtime': 7.24.0
     dev: false
 
-  /@instructure/emotion@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/emotion@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-7EXbwrMByTfdsxroiv26pmfeKj7+8WiSfkIl91gq2t0iePiuZpOPpn81NyHxmky6uO4bkKvSGEmMRdtD+XVL5g==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
-      '@emotion/react': 11.11.4(@types/react@18.2.65)(react@18.2.0)
+      '@emotion/react': 11.11.4(@types/react@18.2.66)(react@18.2.0)
       '@instructure/console': 8.53.2(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/theme-registry': 8.53.2(react-dom@18.2.0)(react@18.2.0)
@@ -875,14 +875,14 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-a11y-content@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-a11y-content@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-JJVKNQfT3VJQ7u2LDepFcndGyqT6z/ufsj7PinSbhsIkTQoksQ2CHrYUqOhZ3tRDg83XgjgTYqAQVcpFpwSZmA==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
@@ -897,14 +897,14 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-a11y-utils@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-a11y-utils@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-qMpuK16U6i/1wMNS0L//EZJ3tLVgClLA9yNoZ2h5QSPiYI7wHUkPwMFCaMbKuU8o+k+VQ2GXY8ssAXjTTsDeXQ==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
@@ -917,7 +917,7 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-alerts@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-alerts@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-sSTbFzTSkOgevlJ2S2SJR4X7y1Rui1LA1st0/aveXohh7H6JfN9hF0gqC8XQGHuVZK9TvV5n5cZQuvll4ZRbog==}
     peerDependencies:
       react: '>=16.8 <=18'
@@ -925,16 +925,16 @@ packages:
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-buttons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-motion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-buttons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-motion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-themes': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/uid': 8.53.2
       keycode: 2.2.1
       prop-types: 15.8.1
@@ -944,19 +944,19 @@ packages:
       - '@types/react'
     dev: false
 
-  /@instructure/ui-avatar@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-avatar@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-kEuzwxrlzTDUJ2Z1qVraN+tzolFoCdrEJ3imQp951xQv1LwlbM3b0rMCdatu2n8zJ1lSU4OVdUWQPycoFDLj0g==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
     transitivePeerDependencies:
@@ -971,21 +971,21 @@ packages:
       axe-core: 4.8.4
     dev: false
 
-  /@instructure/ui-badge@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-badge@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-sABLcI55Jo0xdSJBR/72VV7wMDFthFAXhTtnc98Zt40jxnh9oTrOhDwD2Ct76swZUQL3yvmD1ZFT0MXMX4K/Hg==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-color-utils': 8.53.2
-      '@instructure/ui-position': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-position': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
     transitivePeerDependencies:
@@ -993,18 +993,18 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-billboard@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-billboard@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-ftBVIUCKwsZeO/JiFzWEsCXW/wPQHXjvHYzeNMksrvIHnbLge4M6MA1egy5V7jOhqncon7zWygW6mUhCm/Bfng==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-heading': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-img': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-heading': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-img': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
     transitivePeerDependencies:
@@ -1012,22 +1012,22 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-breadcrumb@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-breadcrumb@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-IbPb3Eh+ZidR0+aBPJkAlZDn3wDPfjCeTdsiB9FLFB/9TAidhLhJW4iQlmSPcTP9kPSfkvBYQYbMf9p/LOJs1Q==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-link': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-link': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-truncate-text': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-truncate-text': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
     transitivePeerDependencies:
@@ -1035,26 +1035,26 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-buttons@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-buttons@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-71pj9W+yuQztD6qXVDQjEHO9ZAX8Q7b1IkOPwW8YN7bzMlAXbez+rG8fHZMKO15lr3alBx/aYPlsFFFfq9jxyw==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-a11y-utils': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-utils': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-color-utils': 8.53.2
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-position': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-position': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-tooltip': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-tooltip': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       keycode: 2.2.1
       prop-types: 15.8.1
       react: 18.2.0
@@ -1063,17 +1063,17 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-byline@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-byline@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-uy2MIPolckGCn/jI7mSZd4Cv9xf920P3ZBaUQWmGn1Im0nRVk1MjDMeZn9Ab3h16fsq1kG4EvfZUy9KneSi4wg==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
     transitivePeerDependencies:
@@ -1081,24 +1081,24 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-calendar@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-calendar@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-ZHaO12rUw2sts1NNYGYqMJzRhDpVXEQYLXIeWJIQuol8tBPv9KRGls7nd3Lq3NhDO3Eq2prjU/bw7hHzdxRJpQ==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-buttons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-buttons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-i18n': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/uid': 8.53.2
       prop-types: 15.8.1
       react: 18.2.0
@@ -1107,24 +1107,24 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-checkbox@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-checkbox@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-ESv5eiqeRhYPvtOmkw9gcGuX36pHet3qM+55sj80YuekxGoZWdkmManp1upF/PJNuuYhBOPcLODN2dQvU7NAQg==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-svg-images': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-svg-images': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/uid': 8.53.2
       keycode: 2.2.1
       prop-types: 15.8.1
@@ -1134,15 +1134,15 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-code-editor@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-code-editor@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-xToOWuCJdoNNzfwFlh1laf8kXYRny1WZlG6z/5ISHvCHoK5wGDiN5niEVtcVt2DcCEojnaQqSFgqDy0diQYfcw==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-color-utils': 8.53.2
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
@@ -1157,32 +1157,32 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-color-picker@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-color-picker@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-3uAiIguvCYp944BkQ6mHsYHC4qLX3vMGpvdJn0Q58NmaStUv4Fll0EPG4UPCwzXwrVrktVfLmZMDux1phh7Uag==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-buttons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-buttons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-color-utils': 8.53.2
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-drilldown': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-pill': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-popover': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-drilldown': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-pill': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-popover': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-text': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-text-input': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-text': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-text-input': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-themes': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-tooltip': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-tooltip': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
     transitivePeerDependencies:
@@ -1197,24 +1197,24 @@ packages:
       tinycolor2: 1.6.0
     dev: false
 
-  /@instructure/ui-date-input@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-date-input@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-j+BRjepCP01czonX8sRg7C3lALbsg3vDm6frguJvpWkO06MNwanIpZjLifwCSmB4pzvDC8NKmOmEx7nZ8cu2EA==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-calendar': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-calendar': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-i18n': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-popover': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-position': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-popover': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-position': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-selectable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-text-input': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-text-input': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
@@ -1223,7 +1223,7 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-date-time-input@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-date-time-input@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-8q1PZXuJbl8ATQOzS8jyTMtGKLthrQlUaFqxtjFUNM+g8Qtoxzh5URa1+IDAzU8gQrBC5oVFl861wU1Ga+iDdg==}
     peerDependencies:
       react: '>=16.8 <=18'
@@ -1231,18 +1231,18 @@ packages:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
       '@instructure/debounce': 8.53.2
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-buttons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-calendar': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-date-input': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-buttons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-calendar': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-date-input': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-i18n': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-time-select': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-time-select': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
@@ -1257,14 +1257,14 @@ packages:
       '@babel/runtime': 7.24.0
     dev: false
 
-  /@instructure/ui-dialog@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-dialog@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-tnJwZ9Nn1KO6T+dXkXrXFTF0Vq/7iYOPE1YEFGlNCHswbY77MYLOyTOcTbAMLDzsXOGLwaw5UFJ0I1q88TcwpQ==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-a11y-utils': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-utils': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
@@ -1288,7 +1288,7 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@instructure/ui-drawer-layout@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)(sinon@17.0.1):
+  /@instructure/ui-drawer-layout@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)(sinon@17.0.1):
     resolution: {integrity: sha512-VVl3zoco9d+7tjko7SlgeAjZrZRVPQRh8tLoY2PMLKnPdh7j2+EAiBv/APQzWh7pGfuC2D2+uakSW5Vc0uuhKA==}
     peerDependencies:
       react: '>=16.8 <=18'
@@ -1296,20 +1296,20 @@ packages:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
       '@instructure/debounce': 8.53.2
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-dialog': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-dialog': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-i18n': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-motion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-motion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-portal': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-position': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-position': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-test-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)(sinon@17.0.1)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/uid': 8.53.2
       prop-types: 15.8.1
       react: 18.2.0
@@ -1319,26 +1319,26 @@ packages:
       - sinon
     dev: false
 
-  /@instructure/ui-drilldown@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-drilldown@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-Gs1IKYYC0QHTDk0T6iTdLZGhesDpgxjkHRVC943t7kEjYmcqJQgdkTCAyMhewX4nKhc33OzxHaaoFQwZ82wqrg==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-options': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-popover': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-position': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-options': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-popover': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-position': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-selectable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
     transitivePeerDependencies:
@@ -1346,7 +1346,7 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-editable@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-editable@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-c7cKMGoO2+tWQVrDtOcCqVeN/AlaJcCX0Noi/Gzdjeb2lbDzlaX6WQMd0lDRjHqlTcGhUAAHLdEmgH7YY/2hQA==}
     peerDependencies:
       react: '>=16.8 <=18'
@@ -1354,15 +1354,15 @@ packages:
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-buttons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-buttons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-flex': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-focusable': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-flex': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-focusable': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -1388,21 +1388,21 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-file-drop@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-file-drop@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-GaufaRE7fUp52Z5m32AGAkAktcRLjW274IAXH+9Pbjpci8DCFfIkxKrQVadjOtCG0lybN+m5clZey84o0rtFXA==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-color-utils': 8.53.2
-      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/uid': 8.53.2
       keycode: 2.2.1
       prop-types: 15.8.1
@@ -1412,17 +1412,17 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-flex@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-flex@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-eBJeTIAFmglDDdBcoHMGQ+gmL+gajFLab3BaWXdqCJraNECxHBd/YUdlvh9GUV09Iqb8kZvJV8nWnqrYPZhpaQ==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
     transitivePeerDependencies:
@@ -1430,7 +1430,7 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-focusable@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-focusable@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-21fJ6M9Z0kzsisQDADva438ks+2Ihf8hJQv6ax/lFsYtA9tjmTeEUFRY40LsWgd/Kj3Ucq3gCqvjt/SHsA/gpA==}
     peerDependencies:
       react: '>=16.8 <=18'
@@ -1440,7 +1440,7 @@ packages:
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
     transitivePeerDependencies:
@@ -1448,19 +1448,19 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-form-field@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-form-field@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-LhTU5maUCuUYWlm1bDCCMtH3qlG1BvMyhw6vRwgGO4a/Ew8CLmR7bDXed76/R933UUSP2yLxq3HupYy6K/xsDA==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-a11y-utils': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-grid': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-utils': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-grid': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/uid': 8.53.2
@@ -1471,16 +1471,16 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-grid@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-grid@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-tJPJCEvG4/SwA/pFcrHmp6Gx/z/6k1wOjXjjhygymBsMcEI4DJkQ09a3e5i2BIDHtQxkqGOv+3xaH4sgwBopqA==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
@@ -1492,19 +1492,19 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-heading@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-heading@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-it/fgiWsD2I/6GgQ/H2GYWPZs1iz41g5uTM3nu4vfBmQy5o90voIV0duBQRutXStTz1idUnURT2QvyoaE3mRtg==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
     transitivePeerDependencies:
@@ -1532,13 +1532,13 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-icons@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-icons@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-NdunFXLliinP2rl12F1Ac8+BWL/UKje7sd2sBpnNTwYE7tufQFIRCrPp3Yqoc4aaq9RIcctwL9pPPvy4u+U0PQ==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
-      '@instructure/ui-svg-images': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-svg-images': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
     transitivePeerDependencies:
@@ -1546,19 +1546,19 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-img@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-img@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-HDISu2j6F96jB/xvblAzflVUM1vVTotqN8t3Tqsz4RuagrzVhuvmSkghlKyrwYVLJ5BHDwViS0N29sicwkdclA==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
     transitivePeerDependencies:
@@ -1566,23 +1566,23 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-link@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-link@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-8k1ydbhwwcMqul/NUTGg12ExknVgt0RmHt5ZYXKWO7E2UZqMeDSQZHeXtA6jYqPep6GKmh5cPL8Wnotr3A6PGA==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-a11y-utils': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-utils': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-color-utils': 8.53.2
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
     transitivePeerDependencies:
@@ -1590,19 +1590,19 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-list@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-list@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-sG5Bjfbi/A4J0eg2c9X3O+p8fNAHStvNrtloJ8M9nLVtGIDpWLC/4m4LYw8sI9MWBOX1mEVWwBWW6M37rcPv5w==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
     transitivePeerDependencies:
@@ -1610,20 +1610,20 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-menu@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-menu@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-Uhgw+e9P/iON6dT3Jk14nm0ybAFI+KKfkBtZ5zuTQCW1KxgTdUJIjHMyCzsvQPBjDPeU7wJDZrmh5/RX2rmrHQ==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-a11y-utils': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-utils': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-popover': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-position': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-popover': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-position': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
@@ -1636,14 +1636,14 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-metric@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-metric@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-kCMoApYzQacN94wgNCdQ/gfpU+Go08fkgai4L9BvpqBG4BNMGbyE15w7mler7rHSAVccYtV7L2NuK3EJe0fVdg==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
@@ -1655,26 +1655,26 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-modal@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-modal@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-ycskSRbiBO17JHTwfOC6z+1SLF+I1bYQJQBlY0rsDpD0V+7rGVepMJcqKP+8xae1Dz4+qAheOQmKr6PS3ayYBw==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-buttons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-dialog': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-buttons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-dialog': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-motion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-overlays': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-motion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-overlays': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-portal': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
     transitivePeerDependencies:
@@ -1682,13 +1682,13 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-motion@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-motion@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-CN6fTwVTvqMnHa+xDMLQ7Sod5MbFrOU4SpQ34gKkmhKTjJrNtn+KkvijkOYomupjt8fmevUSrPj/pwO5zm1gdQ==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
@@ -1701,7 +1701,7 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-navigation@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-navigation@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-Mn9QiD+AaU7KtdDEGI68eLRvkFZDc2G5T7PSQAlEFynRa5SvRvLzj9BvKE2unf6BBaooHEuSM7oqOWr8BUbpFg==}
     peerDependencies:
       react: '>=16.8 <=18'
@@ -1709,22 +1709,22 @@ packages:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
       '@instructure/debounce': 8.53.2
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-a11y-utils': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-badge': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-utils': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-badge': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-focusable': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-menu': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-focusable': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-menu': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-tooltip': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-truncate-list': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-tooltip': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-truncate-list': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
     transitivePeerDependencies:
@@ -1732,16 +1732,16 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-number-input@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-number-input@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-ARvBNC7OxlLqyDnwOnD3NZ4SlpXdWbkwxba7zbUjiPt3Zw8E0CnyTVmXCHqmU61XkZc4WZfN08ojshjQnG7NAQ==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
@@ -1754,19 +1754,19 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-options@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-options@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-SF9WmlvWfC+5aIVJ+0NOReLoPPSGLI3YbWLidhNqk2+xxtxr7/P2JsvbSw9gj6dsnxfzalttFCBMDvta4RZDXQ==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
     transitivePeerDependencies:
@@ -1774,30 +1774,30 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-overlays@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-overlays@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-WfL5B9XdNflBHjqYvFpTNM9V+ei0NT1M4LAZgXDtuCpxBnDb9LdzWpRwGFq+4TSHDwUiv5Nhn2HlGqdjXGegMA==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-buttons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-dialog': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-buttons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-dialog': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-focusable': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-focusable': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-i18n': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-motion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-popover': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-motion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-popover': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-portal': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-position': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-position': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-tooltip': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-tooltip': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/uid': 8.53.2
       no-scroll: 2.1.1
       prop-types: 15.8.1
@@ -1807,20 +1807,20 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-pages@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-pages@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-HAoKmJ/uc/ve9WSi9N6IVI6ecRqu1ynClf6utBWi9u1aHQjSAkCLZ6xL34UAw4BCj3DgZJ+W85TXDAB0cVnBEg==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
     transitivePeerDependencies:
@@ -1828,27 +1828,27 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-pagination@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-pagination@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-lE8S2H239BApPiEAHCmiQR4QRKkm1QaV/w7gRPQ2HF+pHCcSvjWFV7WhE/q10KLDWdXLljWyox7hiyqRaDfX2A==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-a11y-utils': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-buttons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-utils': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-buttons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-number-input': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-number-input': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-portal': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-tooltip': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-tooltip': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/uid': 8.53.2
       keycode: 2.2.1
       prop-types: 15.8.1
@@ -1858,21 +1858,21 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-pill@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-pill@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-Atk42UcgYwaWOZuj2fjXih5b8Rxe9OSmaHDvRou4sfmXR4PvnDh8elrL6rdHeiv+6yuK+KubtyGsMPCwOpZG6A==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-tooltip': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-truncate-text': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-tooltip': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-truncate-text': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
     transitivePeerDependencies:
@@ -1880,24 +1880,24 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-popover@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-popover@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-h0bT2HSTq/Z/5rVTLhXsLJB+myVzi4Lc1HM8uKMHm/ZTTHpW3V5zzxPqGDaBVhd+/2jZJKBK/GM5xz7kxtFV8A==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-a11y-utils': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-dialog': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-utils': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-dialog': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-i18n': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-position': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-position': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/uid': 8.53.2
       keycode: 2.2.1
       prop-types: 15.8.1
@@ -1924,14 +1924,14 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@instructure/ui-position@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-position@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-UGMsw9bWruorxcCzQgBvQZTT+CsAkW1sxtUQSJfbNz/mT0e59yI1k0qAe14+7La5WVvzzu3t1RMkBEakiPnGlw==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/debounce': 8.53.2
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-portal': 8.53.2(react-dom@18.2.0)(react@18.2.0)
@@ -1947,20 +1947,20 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-progress@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-progress@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-6WHImbcydFqE3mWEdfmetyK3LID18Ud87+snx8h7kSeqpuLJAlmqYfX9nuz3twYJZJYQySThtMde9NARfVVudA==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-color-utils': 8.53.2
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
     transitivePeerDependencies:
@@ -1978,16 +1978,16 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@instructure/ui-radio-input@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-radio-input@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-pEy/qAuYRH94tgh5LTJVdI3zTdHLZXZJLsXCY+XJyQXEIqGp0Chzhv2/Sce70jDjL2CajUw4d346MzuRIoT0gw==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
@@ -1998,24 +1998,24 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-range-input@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-range-input@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-ThlMqlxCtaKdEAkJjXcTd1rD/CnHYUvfro3W4FXRYMj2up24d8cSuCeYRjoqmjDavd7Ym4HierF2LC3nXPtVHw==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-color-utils': 8.53.2
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-i18n': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/uid': 8.53.2
       prop-types: 15.8.1
       react: 18.2.0
@@ -2024,22 +2024,22 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-rating@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-rating@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-0fXYgc2nmCwLxp4dvhLz7gtorXieLLD3D5F2/erMtCRfFCyR/iwDzTiPFgPkP0CpuO/nGN7v63EtWJ087/IqKw==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-motion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-motion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
     transitivePeerDependencies:
@@ -2085,27 +2085,27 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-select@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-select@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-fbiOPbW/xTEiuJhNOBCRtMJaZeiWiBJXn8pjKFaj5foe67qu5oNZwhhFRFDpHHFjrse28G+OZjvl+kYM9sEgpw==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-options': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-popover': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-position': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-options': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-popover': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-position': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-selectable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-text-input': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-text-input': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/uid': 8.53.2
       prop-types: 15.8.1
       react: 18.2.0
@@ -2133,7 +2133,7 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-side-nav-bar@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-side-nav-bar@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-1b9nLfxk4L0NMQMEog9GkY6XwmNHE6+cApth8Ji99lrR2Eo1AlUEVSdCt181DOSDU/AnX8LmBJLqPLSGFRtUGg==}
     peerDependencies:
       react: '>=16.8 <=18'
@@ -2141,22 +2141,22 @@ packages:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
       '@instructure/debounce': 8.53.2
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-a11y-utils': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-badge': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-utils': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-badge': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-focusable': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-menu': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-focusable': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-menu': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-tooltip': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-truncate-list': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-tooltip': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-truncate-list': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
     transitivePeerDependencies:
@@ -2164,7 +2164,7 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-simple-select@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-simple-select@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-8hj6HHLDM+hYFPERYidySkJt+R12GLZMSOtbxds1u9Za5IpTm5jlwqmzCTcmZJnfoJNOpSCnI1lTF9c6i4MqLQ==}
     peerDependencies:
       react: '>=16.8 <=18'
@@ -2172,11 +2172,11 @@ packages:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-position': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-position': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-select': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-select': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
@@ -2185,16 +2185,16 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-source-code-editor@8.53.2(@lezer/common@1.2.1)(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-source-code-editor@8.53.2(@lezer/common@1.2.1)(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-IlFwH+Dron3DQO8qNLSSa/7glHxgliykJK4Xzh+p4M3WcD5QmbhMAnDtOW2aRggRD68OD43x5TWbhCEaLR42HQ==}
     peerDependencies:
       react: '>=16.8 <=18'
       react-dom: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
-      '@codemirror/autocomplete': 6.14.0(@codemirror/language@6.10.1)(@codemirror/state@6.4.1)(@codemirror/view@6.25.1)(@lezer/common@1.2.1)
+      '@codemirror/autocomplete': 6.15.0(@codemirror/language@6.10.1)(@codemirror/state@6.4.1)(@codemirror/view@6.26.0)(@lezer/common@1.2.1)
       '@codemirror/commands': 6.3.3
-      '@codemirror/lang-css': 6.2.1(@codemirror/view@6.25.1)
+      '@codemirror/lang-css': 6.2.1(@codemirror/view@6.26.0)
       '@codemirror/lang-html': 6.4.8
       '@codemirror/lang-javascript': 6.2.2
       '@codemirror/lang-json': 6.0.1
@@ -2204,19 +2204,19 @@ packages:
       '@codemirror/lint': 6.5.0
       '@codemirror/search': 6.5.6
       '@codemirror/state': 6.4.1
-      '@codemirror/view': 6.25.1
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@codemirror/view': 6.26.0
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-buttons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-buttons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-i18n': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-test-locator': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-text-input': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-text-input': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-themes': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@lezer/highlight': 1.1.6
@@ -2228,20 +2228,20 @@ packages:
       - '@types/react'
     dev: false
 
-  /@instructure/ui-spinner@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-spinner@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-PHq8QGPYJOH6XhQn+QsMLMYO8/QKVWwQM3ojG9OMMXqbvJ7L8iBRMa6JIS7i/39GCGJc/np+HECPnCZCdAAjkA==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-color-utils': 8.53.2
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/uid': 8.53.2
       prop-types: 15.8.1
       react: 18.2.0
@@ -2250,13 +2250,13 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-svg-images@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-svg-images@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-qMugGD3z4XBeuXhZ8LU04fmZJ4KdgtBGgKk4nTG4/SCZncBsIPphifs1xuNotI79H0vo92YKBRlUriGksaaL/A==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
@@ -2269,23 +2269,23 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-table@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-table@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-ZO9Ku5anx0u7klJ0DkLnhzUnZAAnINEdAok9W1b1wIQfaB1XdsU9YXV9qCxW8h2VeZ1pm1GpMLWMkf9eAH+SWA==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-simple-select': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-simple-select': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
     transitivePeerDependencies:
@@ -2293,7 +2293,7 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-tabs@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-tabs@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-sRgcmyYkiAl6nmpqodn1wasQldWUDQIRWyIiKw1Tp7FXHldEsC6c5KYEUD72qreLwjLMNeHoOeY10xuiDtlcfw==}
     peerDependencies:
       react: '>=16.8 <=18'
@@ -2301,17 +2301,17 @@ packages:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
       '@instructure/debounce': 8.53.2
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-focusable': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-focusable': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-i18n': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-motion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-motion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/uid': 8.53.2
       keycode: 2.2.1
       prop-types: 15.8.1
@@ -2321,21 +2321,21 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-tag@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-tag@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-PJ+1H+3mDJKHkcguf4AGLZsbfQ8YqaNN3BFR8r17uy+SWVow2dAWvd0XeprxTYZj21++0Tj114jQ3lrO49DFfQ==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-color-utils': 8.53.2
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
     transitivePeerDependencies:
@@ -2416,17 +2416,17 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@instructure/ui-text-area@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-text-area@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-YlB5SnzWeQdwcyX94g3aNYPOlzhVmLWj+6cblJXW3Cp88SKAq/b67GsWtKLA2nKKIDlT6LrHTYHrZvKHWSeyFg==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/debounce': 8.53.2
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
@@ -2439,20 +2439,20 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-text-input@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-text-input@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-NGnLw0yFwjNu59TKE72HAnI7hi17I1GsOlp41w1UbbpBSbz80qZxXj5iUKB1lwuwEvh44NpD94YBIJvVQQF/nA==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-tag': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-tag': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
@@ -2461,14 +2461,14 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-text@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-text@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-07DzVVmTUl000tG2aE/dm9rBLlSzXmwOV4Qbbw8fN309wk46ayibJwpf9Wotdxg1HyNN1V8cQvDNgMJ7Vji5/A==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-color-utils': 8.53.2
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
@@ -2500,19 +2500,19 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-time-select@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-time-select@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-/P6P27sDg+QlFtaMIs+NiSPZ44cuhOYSgLdtB6CWq0Oa3JMqRxcGTZ67BBF4qeg7KCNaZdeutolwYcBydXu5Bg==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-i18n': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-position': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-position': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-select': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-select': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-test-locator': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
@@ -2523,26 +2523,26 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-toggle-details@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-toggle-details@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-4yeau3HTTzJhM9/e+TOggFI9jXjVaZ2A8PTwBcAjOL9bQDYkNWYkuPjWdPbERqO04P6qKIe0CXzjpLUcxYRR8A==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-buttons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-buttons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-expandable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-flex': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-menu': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-motion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-flex': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-menu': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-motion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/uid': 8.53.2
       prop-types: 15.8.1
       react: 18.2.0
@@ -2551,16 +2551,16 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-tooltip@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-tooltip@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-VlbSGszlI0VdRZQy6yTOm0qJ/O8NQeRinSMtN+yGoj1qjVdkpUoz9UhpNzLOThnrtOyZM/DOuC/lP4I+8tMi7g==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-popover': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-position': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-popover': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-position': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
@@ -2572,34 +2572,34 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-top-nav-bar@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-top-nav-bar@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-VEg2+82rNll4U9o5cqZUmv7I/MQxcg//hkRRnQ+2I2pmjcDW396SI3YozdCFdj2AQqdIf4A5MySJxiYRqS4wNA==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-avatar': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-breadcrumb': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-buttons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-dialog': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-avatar': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-breadcrumb': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-buttons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-dialog': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-drilldown': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-link': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-popover': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-drilldown': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-link': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-popover': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-responsive': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-tooltip': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-tray': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-truncate-list': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-tooltip': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-tray': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-truncate-list': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
       react: 18.2.0
     transitivePeerDependencies:
@@ -2607,20 +2607,20 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-tray@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-tray@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-/mJaEw+5d1+rLOfTKqNEJnvjtE2PKz2A7GW6pq7W7/2XZaqCBFC2Xy8vievE2QchqnaHESKAREE5CcJ9Ie0dAA==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-dialog': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-dialog': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-i18n': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-motion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-motion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-portal': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-position': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-position': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
@@ -2632,16 +2632,16 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-tree-browser@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-tree-browser@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-AzFf+qQ6bO6fcEdbux3Eeytr2iDYnWkK7qHqg1kTMQhOzpwgcfbTVeTA7MRVhguYIYAa1sCVmSrM/AS/y2Eatw==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-img': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-img': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-testable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
@@ -2654,7 +2654,7 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-truncate-list@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-truncate-list@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-SGrH9bOmUJ0ZR6ay+2S0njOiBTIn5eWy62f1xZA/cseQtke3b6gjwI43C+2qD9+L2Jsul1+q9K7NvDXw83zvpg==}
     peerDependencies:
       react: '>=16.8 <=18'
@@ -2662,7 +2662,7 @@ packages:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
       '@instructure/debounce': 8.53.2
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
@@ -2675,7 +2675,7 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui-truncate-text@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-truncate-text@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-8b1gBTIjNrXURxomFkpzVd7HMZZY0IqSLTXdjeBzeQwI48h70bO9xGsgMMd/biRNr05j+uzM5389TU3VCrFOOw==}
     peerDependencies:
       react: '>=16.8 <=18'
@@ -2683,7 +2683,7 @@ packages:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
       '@instructure/debounce': 8.53.2
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
@@ -2716,19 +2716,19 @@ packages:
       ua-parser-js: 1.0.37
     dev: false
 
-  /@instructure/ui-view@8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
+  /@instructure/ui-view@8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-Mv3UAtL/N3n+nRwlnY1h20ldCAhuClfsCwhx9TBhf9JLc0bt44p1yF+03GiHmuZuG4Em7UdEtbH5SJKqXeTXIQ==}
     peerDependencies:
       react: '>=16.8 <=18'
     dependencies:
       '@babel/runtime': 7.24.0
       '@instructure/console': 8.53.2(react@18.2.0)
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/shared-types': 8.53.2(react@18.2.0)
       '@instructure/ui-color-utils': 8.53.2
       '@instructure/ui-dom-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-i18n': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-position': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-position': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-prop-types': 8.53.2(react@18.2.0)
       '@instructure/ui-react-utils': 8.53.2(react-dom@18.2.0)(react@18.2.0)
       prop-types: 15.8.1
@@ -2738,86 +2738,86 @@ packages:
       - react-dom
     dev: false
 
-  /@instructure/ui@8.53.2(@lezer/common@1.2.1)(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)(sinon@17.0.1):
+  /@instructure/ui@8.53.2(@lezer/common@1.2.1)(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)(sinon@17.0.1):
     resolution: {integrity: sha512-5ydAfiaErkVPok9cj9juDJ6fsuC1tY8hGEKqQCq7QmhRKjU9xm7l+m4MkePo0ADMh04q/0HCtCAdlduuiaPYmA==}
     peerDependencies:
       react: '>= 16.8 <= 18'
       react-dom: '>= 16.8 <= 18'
     dependencies:
       '@babel/runtime': 7.24.0
-      '@instructure/emotion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-alerts': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-avatar': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-badge': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-billboard': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-breadcrumb': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-buttons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-byline': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-calendar': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-checkbox': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-code-editor': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-color-picker': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-date-input': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-date-time-input': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-dialog': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-drawer-layout': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)(sinon@17.0.1)
-      '@instructure/ui-drilldown': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-editable': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/emotion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-a11y-content': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-alerts': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-avatar': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-badge': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-billboard': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-breadcrumb': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-buttons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-byline': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-calendar': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-checkbox': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-code-editor': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-color-picker': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-date-input': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-date-time-input': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-dialog': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-drawer-layout': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)(sinon@17.0.1)
+      '@instructure/ui-drilldown': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-editable': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-expandable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-file-drop': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-flex': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-focusable': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-grid': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-heading': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-file-drop': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-flex': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-focusable': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-form-field': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-grid': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-heading': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-i18n': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-icons': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-img': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-link': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-list': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-menu': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-metric': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-modal': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-motion': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-navigation': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-number-input': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-options': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-overlays': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-pages': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-pagination': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-pill': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-popover': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-icons': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-img': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-link': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-list': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-menu': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-metric': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-modal': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-motion': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-navigation': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-number-input': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-options': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-overlays': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-pages': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-pagination': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-pill': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-popover': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-portal': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-position': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-progress': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-radio-input': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-range-input': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-rating': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-position': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-progress': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-radio-input': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-range-input': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-rating': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-responsive': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-select': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-select': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-selectable': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-side-nav-bar': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-simple-select': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-source-code-editor': 8.53.2(@lezer/common@1.2.1)(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-spinner': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-svg-images': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-table': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-tabs': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-tag': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-text': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-text-area': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-text-input': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-side-nav-bar': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-simple-select': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-source-code-editor': 8.53.2(@lezer/common@1.2.1)(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-spinner': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-svg-images': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-table': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-tabs': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-tag': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-text': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-text-area': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-text-input': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       '@instructure/ui-themes': 8.53.2(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-time-select': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-toggle-details': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-tooltip': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-top-nav-bar': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-tray': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-tree-browser': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-truncate-list': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-truncate-text': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
-      '@instructure/ui-view': 8.53.2(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-time-select': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-toggle-details': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-tooltip': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-top-nav-bar': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-tray': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-tree-browser': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-truncate-list': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-truncate-text': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
+      '@instructure/ui-view': 8.53.2(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     transitivePeerDependencies:
@@ -3232,18 +3232,18 @@ packages:
       react: '>=16'
     dependencies:
       '@types/mdx': 2.0.11
-      '@types/react': 18.2.65
+      '@types/react': 18.2.66
       react: 18.2.0
     dev: false
 
-  /@mdx-js/react@3.0.1(@types/react@18.2.65)(react@18.2.0):
+  /@mdx-js/react@3.0.1(@types/react@18.2.66)(react@18.2.0):
     resolution: {integrity: sha512-9ZrPIU4MGf6et1m1ov3zKf+q9+deetI51zprKB1D/z3NOb+rUxxtEl3mCjW5wTGh6VhRdwPueh1oRzi6ezkA8A==}
     peerDependencies:
       '@types/react': '>=16'
       react: '>=16'
     dependencies:
       '@types/mdx': 2.0.11
-      '@types/react': 18.2.65
+      '@types/react': 18.2.66
       react: 18.2.0
     dev: false
 
@@ -3269,7 +3269,7 @@ packages:
         optional: true
     dependencies:
       '@mdx-js/loader': 3.0.1(webpack@5.90.3)
-      '@mdx-js/react': 3.0.1(@types/react@18.2.65)(react@18.2.0)
+      '@mdx-js/react': 3.0.1(@types/react@18.2.66)(react@18.2.0)
       source-map: 0.7.4
     dev: false
 
@@ -3651,11 +3651,11 @@ packages:
   /@types/react-dom@18.2.22:
     resolution: {integrity: sha512-fHkBXPeNtfvri6gdsMYyW+dW7RXFo6Ad09nLFK0VQWR7yGLai/Cyvyj696gbwYvBnhGtevUG9cET0pmUbMtoPQ==}
     dependencies:
-      '@types/react': 18.2.65
+      '@types/react': 18.2.66
     dev: true
 
-  /@types/react@18.2.65:
-    resolution: {integrity: sha512-98TsY0aW4jqx/3RqsUXwMDZSWR1Z4CUlJNue8ueS2/wcxZOsz4xmW1X8ieaWVRHcmmQM3R8xVA4XWB3dJnWwDQ==}
+  /@types/react@18.2.66:
+    resolution: {integrity: sha512-OYTmMI4UigXeFMF/j4uv0lBBEbongSgptPrHBxqME44h9+yNov+oL6Z3ocJKo0WyXR84sQUNeyIp9MRfckvZpg==}
     dependencies:
       '@types/prop-types': 15.7.11
       '@types/scheduler': 0.16.8
@@ -4246,7 +4246,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001597
-      electron-to-chromium: 1.4.703
+      electron-to-chromium: 1.4.705
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.23.0)
 
@@ -4683,8 +4683,8 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: true
 
-  /electron-to-chromium@1.4.703:
-    resolution: {integrity: sha512-094ZZC4nHXPKl/OwPinSMtLN9+hoFkdfQGKnvXbY+3WEAYtVDpz9UhJIViiY6Zb8agvqxiaJzNG9M+pRZWvSZw==}
+  /electron-to-chromium@1.4.705:
+    resolution: {integrity: sha512-LKqhpwJCLhYId2VVwEzFXWrqQI5n5zBppz1W9ehhTlfYU8CUUW6kClbN8LHF/v7flMgRdETS772nqywJ+ckVAw==}
 
   /emittery@0.13.1:
     resolution: {integrity: sha512-DeWwawk6r5yR9jFgnDKYt4sLS0LmHJJi3ZOnb5/JdbYwj3nW+FxQnHIjhBKz8YLC7oRNPVM9NQ47I3CVx34eqQ==}
@@ -8499,12 +8499,12 @@ packages:
       jest-worker: 27.5.1
       schema-utils: 3.3.0
       serialize-javascript: 6.0.2
-      terser: 5.29.1
+      terser: 5.29.2
       webpack: 5.90.3
     dev: false
 
-  /terser@5.29.1:
-    resolution: {integrity: sha512-lZQ/fyaIGxsbGxApKmoPTODIzELy3++mXhS5hOqaAWZjQtpq/hFHAc+rm29NND1rYRxRWKcjuARNwULNXa5RtQ==}
+  /terser@5.29.2:
+    resolution: {integrity: sha512-ZiGkhUBIM+7LwkNjXYJq8svgkd+QK3UUr0wJqY4MieaezBSAIPgbSPZyIx0idM6XWK5CMzSWa8MJIzmRcB8Caw==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
