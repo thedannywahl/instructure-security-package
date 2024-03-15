@@ -1,5 +1,5 @@
 import { ComponentProps } from 'react';
-import { useAppTray } from "@/lib/Contexts";
+import { useAppTray } from "@/components/LayoutAppTray/Context";
 import { TopNavBar, IconInfoLine, Text } from "@instructure/ui";
 
 /**
@@ -24,7 +24,7 @@ function getActionItems(): ActionItem[] {
   /**
  * Content for the App Tray.
  */
-  const InfoTrayContent: [JSX.Element, string] = [
+  const InfoTrayContent: [JSX.Element, string, any] = [
     <>
       <Text as="p">This site and its contents are maintained by Instructure, inc.</Text>
       <Text as="h4" weight="bold">Current customers</Text>
@@ -35,6 +35,7 @@ function getActionItems(): ActionItem[] {
     </>
     ,
     "Info"
+    , { label: "Info", placement: "end" }
   ] as const
 
   /**
@@ -45,7 +46,7 @@ function getActionItems(): ActionItem[] {
     id: "info",
     color: "secondary",
     variant: "button",
-    onClick: () => { showTray(...InfoTrayContent) },
+    onClick: () => { showTray("Content", null, { placement: "start" }) },
     children: "Info"
   }
 
