@@ -1,8 +1,24 @@
+"use client"
+
 import React, { ReactNode, createContext, useContext, useState } from 'react';
 
+/**
+ * Type for the content of the App Tray.
+ * It can be a JSX element, a React node, or a string.
+ */
 type AppTrayContent = JSX.Element | ReactNode | string
+
+/**
+ * Type for the title of the App Tray.
+ * It is a string.
+ */
 type AppTrayTitle = string
 
+/**
+ * Interface for the App Tray context.
+ * It includes methods for showing, hiding, toggling, and clearing the tray,
+ * as well as the state of the tray (whether it's open, its content, and its title).
+ */
 interface AppTrayContextType {
   showTray: (content: AppTrayContent, title?: AppTrayTitle) => void;
   hideTray: () => void;
@@ -13,12 +29,25 @@ interface AppTrayContextType {
   trayTitle: AppTrayTitle | null;
 }
 
+/**
+ * Interface for the props of the App Tray Provider component.
+ * It includes children, which are React nodes.
+ */
 interface Props {
   children: React.ReactNode;
 }
 
+/**
+ * The App Tray context.
+ * It is created with the AppTrayContextType and is initially undefined.
+ */
 const AppTrayContext = createContext<AppTrayContextType | undefined>(undefined);
 
+/**
+ * Custom hook to use the App Tray context.
+ * It throws an error if the context is not used within the App Tray Provider.
+ * @returns The App Tray context.
+ */
 export const useAppTray = (): AppTrayContextType => {
   const context = useContext(AppTrayContext);
   if (!context) {
@@ -27,6 +56,11 @@ export const useAppTray = (): AppTrayContextType => {
   return context;
 };
 
+/**
+ * The App Tray Provider component.
+ * It provides the App Tray context to its children.
+ * @param children - The children elements.
+ */
 export const AppTrayProvider: React.FC<Props> = ({ children }) => {
   const [trayIsOpen, setTrayIsOpen] = useState<boolean>(false);
   const [trayContent, setTrayContent] = useState<AppTrayContent | null>(null);
@@ -45,7 +79,15 @@ export const AppTrayProvider: React.FC<Props> = ({ children }) => {
   }
 
   return (
-    <AppTrayContext.Provider value={{ hideTray, showTray, toggleTray, clearTray, trayIsOpen, trayContent, trayTitle }}>
+    <AppTrayContext.Provider value={{
+      showTray,
+      hideTray,
+      toggleTray,
+      clearTray,
+      trayIsOpen,
+      trayContent,
+      trayTitle
+    }}>
       {children}
     </AppTrayContext.Provider>
   );

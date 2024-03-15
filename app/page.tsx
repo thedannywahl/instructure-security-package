@@ -3,12 +3,16 @@
 import { Button, View, Text } from "@instructure/ui";
 import { useAppTray } from "@/lib/Contexts";
 
+/**
+ * Home function component
+ * @returns JSX.Element
+ */
 function Home(): JSX.Element {
 
   const trayTitle = "Tray Title"
   const trayContent = <View as="div">Lorem Ipsum Sit Dolor...</View>
 
-  const { showTray } = useAppTray();
+  const { showTray } = useAppTray()
 
   return (
     <>

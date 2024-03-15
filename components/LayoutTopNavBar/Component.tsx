@@ -1,26 +1,34 @@
-import { TopNavBar, IconInstructureLogoLine, IconInfoLine } from "@instructure/ui";
-
+import { TopNavBar, IconInstructureLogoLine } from "@instructure/ui";
 import { InstUISettingsProvider } from '@instructure/emotion';
 import { generateInstanceCounterMap } from '@instructure/ui-react-utils';
 
-import getActionItems from "./ActionItems";
+import getActionItems, { ActionItem } from "./ActionItems";
 import themeOverrides from "./ThemeOverrides";
-import { useAppTray } from "@/lib/Contexts";
 
-
+/**
+ * Function to render the top navigation bar of the layout.
+ */
 function LayoutTopNavBar(): JSX.Element {
 
-  const counter = generateInstanceCounterMap();
+  /**
+   * Instance counter map for Instructure UI components.
+   */
+  const counter: Map<string, number> = generateInstanceCounterMap();
   counter.set('TopNavBar', 0);
 
+  /**
+   * Function to handle the toggle of the dropdown menu.
+   */
   const handleDropdownMenuToggle = (isMenuOpen: boolean) => {
     const htmlEl = document.querySelector('html');
     if (!htmlEl) return;
     htmlEl.style.overflow = isMenuOpen ? 'hidden' : 'auto';
   };
 
-  const { showTray } = useAppTray();
-  const ActionItems = getActionItems();
+  /**
+   * TopNavBar.Item items for TopNavBar.ActionItems.
+   */
+  const ActionItems: ActionItem[] = getActionItems();
 
   return (
     <InstUISettingsProvider
@@ -32,7 +40,6 @@ function LayoutTopNavBar(): JSX.Element {
         breakpoint={684}
       >
         {() => {
-          //@TODO: import data
           return (
             <TopNavBar.Layout
               id="appNav"
@@ -67,14 +74,7 @@ function LayoutTopNavBar(): JSX.Element {
                     `${hiddenChildrenCount} more actions`
                   }
                 >
-                  {ActionItems.map((item, index) => (
-                    <TopNavBar.Item
-                      variant="button"
-                      key={index}
-                      {...item}
-                    />
-                  ))}
-
+                  {ActionItems.map((item, index) => <TopNavBar.Item key={index} {...item} />)}
                 </TopNavBar.ActionItems>
               )}
             />
