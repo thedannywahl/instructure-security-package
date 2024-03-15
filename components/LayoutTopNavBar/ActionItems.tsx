@@ -25,10 +25,9 @@ function getActionItems() {
     {
       renderIcon: <IconInfoLine />,
       id: "info",
-      variant: "button",
       color: "secondary",
       href: "#",
-      //onClick: () => { showTray(infoTrayContent(), infoTrayTitle) },
+      onClick: () => { showTray(infoTrayContent(), infoTrayTitle) },
       children: "Info"
     })
 

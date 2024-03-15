@@ -67,15 +67,13 @@ function LayoutTopNavBar(): JSX.Element {
                     `${hiddenChildrenCount} more actions`
                   }
                 >
-                  <TopNavBar.Item
-                    renderIcon={<IconInfoLine />}
-                    id="guides"
-                    variant="button"
-                    color="secondary"
-                    href="#"
-                    onClick={() => { showTray("content", "title") }}
-                    children="Info"
-                  />
+                  {ActionItems.map((item, index) => (
+                    <TopNavBar.Item
+                      variant="button"
+                      key={index}
+                      {...item}
+                    />
+                  ))}
 
                 </TopNavBar.ActionItems>
               )}
