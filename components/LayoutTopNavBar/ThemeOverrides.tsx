@@ -1,5 +1,3 @@
-import { canvas, instructure } from "@instructure/ui";
-
 const themeOverrides: Object = {
   themeOverrides: {
     canvas: {}
