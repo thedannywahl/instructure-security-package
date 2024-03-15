@@ -1,27 +1,23 @@
 "use client"
 
-// @TODO: SSR
-import { InstUISettingsProvider } from "@instructure/emotion"
-import { generateInstanceCounterMap } from "@instructure/ui-react-utils"
-import { Metadata } from "next"
-
-import { canvas, View } from "@instructure/ui"
+import { View } from "@instructure/ui"
 import LayoutTopNavBar from "@/components/LayoutTopNavBar/Component"
 import LayoutAppTray from "@/components/LayoutAppTray/Component"
 
 import "./globals.css";
 
 import { AppTrayProvider } from "@/lib/Contexts"
+import { InstUI } from "@/lib/ThemeProvider"
 
+/**
+ * RootLayout function component
+ * @param {object} props - The properties that define the component.
+ * @param {React.ReactNode} props.children - The child elements of the component.
+ */
 function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
-  const counter = generateInstanceCounterMap()
-  counter.set('App', 0)
 
   return (
-    <InstUISettingsProvider
-      theme={canvas}
-      instanceCounterMap={counter}
-    >
+    <InstUI>
       <AppTrayProvider>
         <html lang="en">
           <View as="body"
@@ -42,16 +38,11 @@ function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
           </View>
         </html>
       </AppTrayProvider>
-    </InstUISettingsProvider>
+    </InstUI>
 
   );
 }
 
-/* export const metadata: Metadata = {
-  title: 'Home',
-  description: 'Welcome to Next.js',
-} */
-
-export const runtime = "edge" // 'nodejs' (default) | 'edge' | 'serverless'
+export const runtime = "edge"
 
 export default RootLayout
