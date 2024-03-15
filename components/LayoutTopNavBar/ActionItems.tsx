@@ -1,36 +1,55 @@
+import { ComponentProps } from 'react';
 import { useAppTray } from "@/lib/Contexts";
-import { IconInfoLine, Text } from "@instructure/ui";
+import { TopNavBar, IconInfoLine, Text } from "@instructure/ui";
 
-function getActionItems() {
+/**
+ * Type definition for items in the top navigation bar.
+ */
+type TopNavBarItem = ComponentProps<typeof TopNavBar.Item>;
+
+/**
+ * Interface for action items in the application.
+ */
+export interface ActionItem extends TopNavBarItem { }
+
+/**
+ * Function to get action items for the application.
+ * @returns Array of action items.
+ */
+function getActionItems(): ActionItem[] {
 
   const { showTray } = useAppTray();
-  const actionItems = []
+  const actionItems: ActionItem[] = []
 
+  /**
+ * Content for the App Tray.
+ */
+  const InfoTrayContent: [JSX.Element, string] = [
+    <>
+      <Text as="p">This site and its contents are maintained by Instructure, inc.</Text>
+      <Text as="h4" weight="bold">Current customers</Text>
+      <Text as="p">Reach out to your CSM</Text>
+      <Text as="h4" weight="bold">Prospective customers</Text>
+      <Text as="p">Reach out to your sales contact.</Text>
+      <Text as="p">For general inquiries email.</Text>
+    </>
+    ,
+    "Info"
+  ] as const
 
-  const infoTrayContent = () => {
-    return (
-      <>
-        <Text as="p">This site and its contents are maintained by Instructure, inc.</Text>
-        <Text as="h4" weight="bold">Current customers</Text>
-        <Text as="p">Reach out to your CSM</Text>
-        <Text as="h4" weight="bold">Prospective customers</Text>
-        <Text as="p">Reach out to your sales contact.</Text>
-        <Text as="p">For general inquiries email.</Text>
-      </>
-    )
+  /**
+   * Information Action Item.
+   */
+  const Info: ActionItem = {
+    renderIcon: <IconInfoLine />,
+    id: "info",
+    color: "secondary",
+    variant: "button",
+    onClick: () => { showTray(...InfoTrayContent) },
+    children: "Info"
   }
-  const infoTrayTitle = "Info"
 
-  actionItems.push(
-    {
-      renderIcon: <IconInfoLine />,
-      id: "info",
-      color: "secondary",
-      href: "#",
-      onClick: () => { showTray(infoTrayContent(), infoTrayTitle) },
-      children: "Info"
-    })
-
+  actionItems.push(Info)
 
   return actionItems
 }
