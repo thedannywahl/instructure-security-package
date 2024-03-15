@@ -1,7 +1,8 @@
 "use client"
 
 import { Button, View, Text } from "@instructure/ui";
-import { useAppTray } from "@/lib/Contexts";
+import { useAppTray } from "@/components/LayoutAppTray/Context";
+import { useAppModal } from "@/components/LayoutAppModal/Context";
 
 /**
  * Home function component
@@ -9,10 +10,11 @@ import { useAppTray } from "@/lib/Contexts";
  */
 function Home(): JSX.Element {
 
-  const trayTitle = "Tray Title"
-  const trayContent = <View as="div">Lorem Ipsum Sit Dolor...</View>
+  const content = <View as="div">Lorem Ipsum Sit Dolor...</View>
+  const title = "Title"
 
   const { showTray } = useAppTray()
+  const { showModal } = useAppModal()
 
   return (
     <>
@@ -25,8 +27,12 @@ function Home(): JSX.Element {
         pork chop leberkas flank venison ham chicken.
       </Text>
       <Button
-        onClick={() => showTray(trayContent, trayTitle)}
+        onClick={() => showTray(content, title)}
         children="Show Tray"
+      />
+      <Button
+        onClick={() => showModal(content, title)}
+        children="Show Modal"
       />
     </>
 
