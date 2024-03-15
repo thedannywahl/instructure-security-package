@@ -1,5 +1,5 @@
 import { render, fireEvent } from '@testing-library/react';
-import { AppTrayProvider, useAppTray } from '@/lib/Contexts';
+import { AppTrayProvider, useAppTray } from '@/components/LayoutAppTray/Context';
 import { Button, View } from '@instructure/ui';
 import LayoutAppTray from '@/components/LayoutAppTray/Component';
 
