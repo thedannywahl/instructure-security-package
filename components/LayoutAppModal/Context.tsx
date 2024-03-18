@@ -33,6 +33,7 @@ interface AppModalContextType extends ModalProps {
   showModal: (body: AppModalBody, header?: AppModalHeader, footer?: AppModalFooter, ...ModalProps: ModalProps[]) => void;
   hideModal: () => void;
   toggleModal: () => void;
+  clearModal: () => void;
   modalIsOpen: boolean;
   modalBody: AppModalBody;
   modalHeader: AppModalHeader | null;
@@ -86,10 +87,6 @@ export const AppModalProvider: React.FC<Props> = ({ children }) => {
     modalFooter?: AppModalFooter,
     ...modalProps: ModalProps[]
   ) => {
-    console.log("modalBody: ", modalBody)
-    console.log("modalHeader: ", modalHeader)
-    console.log("modalFooter: ", modalFooter)
-    console.log("modalProps: ", modalProps)
     setModalLabel(label)
     setModalHeader(modalHeader || null)
     setModalFooter(modalFooter || null)
@@ -97,6 +94,11 @@ export const AppModalProvider: React.FC<Props> = ({ children }) => {
     setModalProps(modalProps)
     setModalIsOpen(true)
   };
+  const clearModal = () => {
+    setModalBody(<></>)
+    setModalHeader("")
+    setModalFooter("")
+  }
   const toggleModal = () => setModalIsOpen(!modalIsOpen);
 
 
@@ -105,6 +107,7 @@ export const AppModalProvider: React.FC<Props> = ({ children }) => {
       showModal,
       hideModal,
       toggleModal,
+      clearModal,
       modalIsOpen,
       modalBody,
       modalHeader,

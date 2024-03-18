@@ -13,6 +13,7 @@ function LayoutAppModal(): JSX.Element {
     modalHeader,
     modalFooter,
     hideModal,
+    clearModal,
     label,
     toggleModal,
     children,
