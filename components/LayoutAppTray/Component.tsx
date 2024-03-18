@@ -50,6 +50,8 @@ function LayoutAppTray(): JSX.Element {
   return (
     <Tray
       open={trayIsOpen}
+      onDismiss={closeTray}
+      shouldCloseOnDocumentClick
       {...TrayProps}
     >
       <View as="div" padding="medium">

@@ -33,7 +33,7 @@ function Home(): JSX.Element {
       />
       <br />
       <Button
-        onClick={() => showModal(content, title, null)}
+        onClick={() => showModal(content, title, footer)}
         children="Show Modal"
       />
     </>
