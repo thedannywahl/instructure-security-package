@@ -1,45 +1,8 @@
 "use client"
 
-import { ComponentProps } from 'react';
-import React, { ReactNode, createContext, useContext, useState } from 'react';
-import { Tray } from "@instructure/ui";
-
-type TrayProps = ComponentProps<typeof Tray> & { label?: string };
-
-/**
- * Type for the content of the App Tray.
- * It can be a JSX element, a React node, or a string.
- */
-type AppTrayContent = JSX.Element | ReactNode | string
-
-/**
- * Type for the title of the App Tray.
- * It is a string.
- */
-type AppTrayTitle = string | null
-
-/**
- * Interface for the App Tray context.
- * It includes methods for showing, hiding, toggling, and clearing the tray,
- * as well as the state of the tray (whether it's open, its content, and its title).
- */
-interface AppTrayContextType extends TrayProps {
-  showTray: (content?: AppTrayContent, title?: AppTrayTitle, ...TrayProps: TrayProps[]) => void;
-  hideTray: () => void;
-  toggleTray: () => void;
-  clearTray: () => void;
-  trayIsOpen: boolean;
-  trayContent: AppTrayContent | null;
-  trayTitle: AppTrayTitle | null;
-}
-
-/**
- * Interface for the props of the App Tray Provider component.
- * It includes children, which are React nodes.
- */
-interface Props {
-  children: React.ReactNode;
-}
+import React, { createContext, useContext, useState } from 'react';
+import { TrayProps, AppTrayTitle, AppTrayContent } from './types';
+import { AppTrayContextType, Props } from './interfaces';
 
 /**
  * The App Tray context.

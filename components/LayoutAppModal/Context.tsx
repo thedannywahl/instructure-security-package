@@ -1,52 +1,7 @@
 "use client"
-
-import { ComponentProps } from 'react';
-import React, { ReactNode, createContext, useContext, useState } from 'react';
-import { Modal } from "@instructure/ui";
-
-type ModalProps = ComponentProps<typeof Modal> & { label?: string };
-
-/**
- * Type for the content of the App Modal.
- * It can be a JSX element, a React node, or a string.
- */
-type AppModalBody = JSX.Element | ReactNode | string
-
-/**
- * Type for the title of the App Modal.
- * It is a string.
- */
-type AppModalHeader = string | null
-
-/**
- * Type for the title of the App Modal.
- * It is a string.
- */
-type AppModalFooter = string | null
-
-/**
- * Interface for the App Modal context.
- * It includes methods for showing, hiding, toggling, and clearing the modal,
- * as well as the state of the modal (whether it's open, its content, and its title).
- */
-interface AppModalContextType extends ModalProps {
-  showModal: (body: AppModalBody, header?: AppModalHeader, footer?: AppModalFooter, ...ModalProps: ModalProps[]) => void;
-  hideModal: () => void;
-  toggleModal: () => void;
-  clearModal: () => void;
-  modalIsOpen: boolean;
-  modalBody: AppModalBody;
-  modalHeader: AppModalHeader | null;
-  modalFooter: AppModalHeader | null;
-}
-
-/**
- * Interface for the props of the App Modal Provider component.
- * It includes children, which are React nodes.
- */
-interface Props {
-  children: React.ReactNode;
-}
+import React, { createContext, useContext, useState } from 'react';
+import { ModalProps, AppModalBody, AppModalHeader, AppModalFooter } from './types';
+import { AppModalContextType, Props } from './interfaces';
 
 /**
  * The App Modal context.
