@@ -10,27 +10,33 @@ type ModalProps = ComponentProps<typeof Modal> & { label?: string };
  * Type for the content of the App Modal.
  * It can be a JSX element, a React node, or a string.
  */
-type AppModalContent = JSX.Element | ReactNode | string
+type AppModalBody = JSX.Element | ReactNode | string
 
 /**
  * Type for the title of the App Modal.
  * It is a string.
  */
-type AppModalTitle = string | null
+type AppModalHeader = string | null
+
+/**
+ * Type for the title of the App Modal.
+ * It is a string.
+ */
+type AppModalFooter = string | null
 
 /**
  * Interface for the App Modal context.
- * It includes methods for showing, hiding, toggling, and clearing the Modal,
- * as well as the state of the Modal (whether it's open, its content, and its title).
+ * It includes methods for showing, hiding, toggling, and clearing the modal,
+ * as well as the state of the modal (whether it's open, its content, and its title).
  */
 interface AppModalContextType extends ModalProps {
-    showModal: (content?: AppModalContent, title?: AppModalTitle, ...ModalProps: ModalProps[]) => void;
-    hideModal: () => void;
-    toggleModal: () => void;
-    clearModal: () => void;
-    ModalIsOpen: boolean;
-    ModalContent: AppModalContent | null;
-    ModalTitle: AppModalTitle | null;
+  showModal: (body: AppModalBody, header?: AppModalHeader, footer?: AppModalFooter, ...ModalProps: ModalProps[]) => void;
+  hideModal: () => void;
+  toggleModal: () => void;
+  modalIsOpen: boolean;
+  modalBody: AppModalBody;
+  modalHeader: AppModalHeader | null;
+  modalFooter: AppModalHeader | null;
 }
 
 /**
@@ -38,7 +44,7 @@ interface AppModalContextType extends ModalProps {
  * It includes children, which are React nodes.
  */
 interface Props {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }
 
 /**
@@ -53,11 +59,11 @@ const AppModalContext = createContext<AppModalContextType | undefined>(undefined
  * @returns The App Modal context.
  */
 export const useAppModal = (): AppModalContextType => {
-    const context = useContext(AppModalContext);
-    if (!context) {
-        throw new Error('useAppModal must be used within a AppModalProvider');
-    }
-    return context;
+  const context = useContext(AppModalContext);
+  if (!context) {
+    throw new Error('useAppModal must be used within a AppModalProvider');
+  }
+  return context;
 };
 
 /**
@@ -66,46 +72,48 @@ export const useAppModal = (): AppModalContextType => {
  * @param children - The children elements.
  */
 export const AppModalProvider: React.FC<Props> = ({ children }) => {
-    const [ModalIsOpen, setModalIsOpen] = useState<boolean>(false);
-    const [ModalContent, setModalContent] = useState<AppModalContent | null>(null);
-    const [ModalTitle, setModalTitle] = useState<AppModalTitle | null>(null);
-    const [ModalProps, setModalProps] = useState<ModalProps[] | null>(null);
-    const [label, setModalLabel] = useState<string>("App Modal");
+  const [modalIsOpen, setModalIsOpen] = useState<boolean>(false);
+  const [modalBody, setModalBody] = useState<AppModalBody>(<></>);
+  const [modalHeader, setModalHeader] = useState<AppModalHeader | null>(null);
+  const [modalFooter, setModalFooter] = useState<AppModalFooter | null>(null);
+  const [modalProps, setModalProps] = useState<ModalProps[] | null>(null);
+  const [label, setModalLabel] = useState<string>("App Modal");
 
-    const hideModal = () => setModalIsOpen(false);
-    const showModal = (ModalContent?: AppModalContent, ModalTitle?: AppModalTitle, ...ModalProps: ModalProps[]) => {
+  const hideModal = () => setModalIsOpen(false);
+  const showModal = (
+    modalBody: AppModalBody,
+    modalHeader?: AppModalHeader,
+    modalFooter?: AppModalFooter,
+    ...modalProps: ModalProps[]
+  ) => {
+    console.log("modalBody: ", modalBody)
+    console.log("modalHeader: ", modalHeader)
+    console.log("modalFooter: ", modalFooter)
+    console.log("modalProps: ", modalProps)
+    setModalLabel(label)
+    setModalHeader(modalHeader || null)
+    setModalFooter(modalFooter || null)
+    setModalBody(modalBody)
+    setModalProps(modalProps)
+    setModalIsOpen(true)
+  };
+  const toggleModal = () => setModalIsOpen(!modalIsOpen);
 
-        console.log("label:", label)
-        console.log("ModalProps:", ModalProps)
 
-        if (ModalProps && ModalProps.length > 0) {
-            ModalProps[0].label = ModalProps[0].label || label;
-        }
-        setModalTitle(ModalTitle || null)
-        setModalLabel(ModalProps[0].label)
-        setModalContent(ModalContent || null)
-        setModalProps(ModalProps)
-        setModalIsOpen(true)
-    };
-    const toggleModal = () => setModalIsOpen(!ModalIsOpen);
-    const clearModal = () => {
-        setModalContent(null)
-        setModalTitle(null)
-    }
-
-    return (
-        <AppModalContext.Provider value={{
-            showModal,
-            hideModal,
-            toggleModal,
-            clearModal,
-            ModalIsOpen,
-            ModalContent,
-            ModalTitle,
-            label: "App Modal",
-            ...ModalProps
-        }}>
-            {children}
-        </AppModalContext.Provider>
-    );
+  return (
+    <AppModalContext.Provider value={{
+      showModal,
+      hideModal,
+      toggleModal,
+      modalIsOpen,
+      modalBody,
+      modalHeader,
+      modalFooter,
+      label: "App Modal",
+      ...modalProps,
+      children
+    }}>
+      {children}
+    </AppModalContext.Provider>
+  );
 }

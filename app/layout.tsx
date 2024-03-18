@@ -3,12 +3,10 @@
 import { View } from "@instructure/ui"
 import LayoutTopNavBar from "@/components/LayoutTopNavBar/Component"
 import LayoutAppTray from "@/components/LayoutAppTray/Component"
-import { AppTrayProvider } from "@/components/LayoutAppTray/Context"
-import LayoutAppModal from "@/components/LayoutAppModal/Component"
-import { AppModalProvider } from "@/components/LayoutAppModal/Context"
-import { InstUI } from "@/lib/ThemeProvider"
+import { InstUI } from "@/components/LayoutThemeProvider/Component"
 
 import "./globals.css";
+import LayoutAppModal from "@/components/LayoutAppModal/Component"
 
 /**
  * RootLayout function component
@@ -19,29 +17,25 @@ function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
 
   return (
     <InstUI>
-      <AppTrayProvider>
-        <AppModalProvider>
-          <html lang="en">
-            <View as="body"
-              minHeight="100vh"
-              position="relative"
-              margin="0"
-              padding="0"
-            >
-              <LayoutTopNavBar />
-              <View
-                as="main"
-                background="primary"
-                withVisualDebug
-              >
-                {children}
-              </View>
-              <LayoutAppModal />
-              <LayoutAppTray />
-            </View>
-          </html>
-        </AppModalProvider>
-      </AppTrayProvider>
+      <html lang="en">
+        <View as="body"
+          minHeight="100vh"
+          position="relative"
+          margin="0"
+          padding="0"
+        >
+          <LayoutTopNavBar />
+          <View
+            as="main"
+            background="primary"
+            withVisualDebug
+          >
+            {children}
+          </View>
+          <LayoutAppTray />
+          <LayoutAppModal />
+        </View>
+      </html>
     </InstUI>
 
   );

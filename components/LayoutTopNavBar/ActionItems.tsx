@@ -46,7 +46,7 @@ function getActionItems(): ActionItem[] {
     id: "info",
     color: "secondary",
     variant: "button",
-    onClick: () => { showTray("Content", null, { placement: "start" }) },
+    onClick: () => { showTray("Content", null, { placement: "end" }) },
     children: "Info"
   }
 

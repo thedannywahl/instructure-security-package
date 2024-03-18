@@ -4,6 +4,8 @@ import React, { ComponentProps } from 'react';
 import { InstUISettingsProvider } from "@instructure/emotion"
 import { canvas } from "@instructure/ui"
 import { generateInstanceCounterMap } from "@instructure/ui-react-utils"
+import { AppTrayProvider } from '@/components/LayoutAppTray/Context';
+import { AppModalProvider } from '@/components/LayoutAppModal/Context';
 
 /**
  * Type for the properties of the InstUI component
@@ -30,7 +32,11 @@ export const InstUI: React.FC<InstUIProps> = ({ children }: { children?: React.R
       theme={canvas}
       instanceCounterMap={counter}
     >
-      {children}
+      <AppTrayProvider>
+        <AppModalProvider>
+          {children}
+        </AppModalProvider>
+      </AppTrayProvider>
     </InstUISettingsProvider>
   )
 }

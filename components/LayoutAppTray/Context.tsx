@@ -75,14 +75,8 @@ export const AppTrayProvider: React.FC<Props> = ({ children }) => {
   const hideTray = () => setTrayIsOpen(false);
   const showTray = (trayContent?: AppTrayContent, trayTitle?: AppTrayTitle, ...trayProps: TrayProps[]) => {
 
-    console.log("label:", label)
-    console.log("trayProps:", trayProps)
-
-    if (trayProps && trayProps.length > 0) {
-      trayProps[0].label = trayProps[0].label || label;
-    }
     setTrayTitle(trayTitle || null)
-    setTrayLabel(trayProps[0].label)
+    setTrayLabel(label)
     setTrayContent(trayContent || null)
     setTrayProps(trayProps)
     setTrayIsOpen(true)

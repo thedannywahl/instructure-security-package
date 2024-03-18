@@ -17,7 +17,7 @@ function LayoutAppTray(): JSX.Element {
     toggleTray,
     ...trayProps
   } = useAppTray();
-  const TrayProps = trayProps[0] ? trayProps[0] : trayProps
+  const TrayProps = Object.hasOwn(trayProps, 0) ? trayProps[0] : trayProps
 
   /**
    * Function to handle the click event of the close button.
@@ -26,7 +26,7 @@ function LayoutAppTray(): JSX.Element {
     hideTray();
   }
 
-  const trayHeader: JSX.Element =
+  const header: JSX.Element =
     <Flex>
       <Flex.Item
         shouldGrow
@@ -44,6 +44,8 @@ function LayoutAppTray(): JSX.Element {
       </Flex.Item>
     </Flex>
 
+  const content = trayContent
+
 
   return (
     <Tray
@@ -51,8 +53,8 @@ function LayoutAppTray(): JSX.Element {
       {...TrayProps}
     >
       <View as="div" padding="medium">
-        {trayHeader}
-        {trayContent}
+        {header}
+        {content}
       </View>
     </Tray>
   )

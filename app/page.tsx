@@ -12,6 +12,7 @@ function Home(): JSX.Element {
 
   const content = <View as="div">Lorem Ipsum Sit Dolor...</View>
   const title = "Title"
+  const footer = "Footer"
 
   const { showTray } = useAppTray()
   const { showModal } = useAppModal()
@@ -30,8 +31,9 @@ function Home(): JSX.Element {
         onClick={() => showTray(content, title)}
         children="Show Tray"
       />
+      <br />
       <Button
-        onClick={() => showModal(content, title)}
+        onClick={() => showModal(content, title, null)}
         children="Show Modal"
       />
     </>
