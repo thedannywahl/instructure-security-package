@@ -1,16 +1,13 @@
 "use client"
 
-import React, { ComponentProps } from 'react';
+import React from 'react';
 import { InstUISettingsProvider } from "@instructure/emotion"
 import { canvas } from "@instructure/ui"
 import { generateInstanceCounterMap } from "@instructure/ui-react-utils"
 import { AppTrayProvider } from '@/components/LayoutAppTray/Context';
 import { AppModalProvider } from '@/components/LayoutAppModal/Context';
 
-/**
- * Type for the properties of the InstUI component
- */
-type InstUIProps = ComponentProps<typeof InstUISettingsProvider> & {};
+import { Props } from './types';
 
 /**
  * InstUI function component
@@ -18,7 +15,7 @@ type InstUIProps = ComponentProps<typeof InstUISettingsProvider> & {};
  * @param {React.ReactNode} props.children - The child elements of the component.
  * @returns {JSX.Element} The rendered JSX element.
  */
-export const InstUI: React.FC<InstUIProps> = ({ children }: { children?: React.ReactNode; }): JSX.Element => {
+export const InstUI: React.FC<Props> = ({ children }: { children?: React.ReactNode; }): JSX.Element => {
 
   /**
    * Instance counter map for Instructure UI components.
