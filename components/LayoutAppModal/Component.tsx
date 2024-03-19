@@ -7,19 +7,19 @@ import { Modal, CloseButton, Heading } from "@instructure/ui";
 function LayoutAppModal(): JSX.Element {
 
   const {
-    showModal,
     modalIsOpen,
     modalBody,
     modalHeader,
     modalFooter,
     hideModal,
-    clearModal,
-    label,
-    toggleModal,
-    children,
-    ...modalProps
+    modalLabel,
+    modalOptions,
   } = useAppModal();
-  const ModalProps = Object.hasOwn(modalProps, 0) ? modalProps[0] : modalProps
+
+  const ModalProps = modalOptions?.modal || undefined
+  const ModalHeaderProps = modalOptions?.header || undefined
+  const ModalBodyProps = modalOptions?.body || undefined
+  const ModalFooterProps = modalOptions?.footer || undefined
 
   /**
    * Function to handle the click event of the close button.
@@ -39,11 +39,17 @@ function LayoutAppModal(): JSX.Element {
     )
   }
 
-  const body: JSX.Element = <Modal.Body>{modalBody}</Modal.Body>
+  const body: JSX.Element = <Modal.Body
+    {...ModalBodyProps}
+  >
+    {modalBody}
+  </Modal.Body>
 
   const header: JSX.Element | null = modalHeader
     ? (
-      <Modal.Header>
+      <Modal.Header
+        {...ModalHeaderProps}
+      >
         {renderCloseButton()}
         <Heading>
           {modalHeader}
@@ -52,12 +58,19 @@ function LayoutAppModal(): JSX.Element {
     )
     : null
 
-  const footer: JSX.Element | null = modalFooter ? <Modal.Footer>{modalFooter}</Modal.Footer> : null
+  const footer: JSX.Element | null = modalFooter
+    ? (
+      <Modal.Footer
+        {...ModalFooterProps}
+      >
+        {modalFooter}
+      </Modal.Footer>
+    ) : null
 
   return (
     <Modal
       open={modalIsOpen}
-      label={label}
+      label={modalLabel}
       onDismiss={closeModal}
       shouldCloseOnDocumentClick
       {...ModalProps}

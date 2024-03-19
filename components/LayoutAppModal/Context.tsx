@@ -1,7 +1,16 @@
 "use client"
 import React, { createContext, useContext, useState } from 'react';
-import { ModalProps, AppModalBody, AppModalHeader, AppModalFooter } from './types';
-import { AppModalContextType, Props } from './interfaces';
+import {
+  ModalProps,
+  ModalModalProps,
+  ModalHeaderProps,
+  ModalBodyProps,
+  ModalFooterProps,
+  AppModalBody,
+  AppModalHeader,
+  AppModalFooter
+} from './types';
+import { AppModalContextType, ModalOptions, Props } from './interfaces';
 
 /**
  * The App Modal context.
@@ -32,29 +41,47 @@ export const AppModalProvider: React.FC<Props> = ({ children }) => {
   const [modalBody, setModalBody] = useState<AppModalBody>(<></>);
   const [modalHeader, setModalHeader] = useState<AppModalHeader | null>(null);
   const [modalFooter, setModalFooter] = useState<AppModalFooter | null>(null);
-  const [modalProps, setModalProps] = useState<ModalProps[] | null>(null);
-  const [label, setModalLabel] = useState<string>("App Modal");
+  const [modalProps, setModalProps] = useState<ModalModalProps[] | ModalProps[] | undefined>(undefined);
+  const [modalHeaderProps, setModalHeaderProps] = useState<ModalHeaderProps[] | undefined>(undefined);
+  const [modalBodyProps, setModalBodyProps] = useState<ModalBodyProps[] | undefined>(undefined);
+  const [modalFooterProps, setModalFooterProps] = useState<ModalFooterProps[] | undefined>(undefined);
+  const [modalLabel, setModalLabel] = useState<string>("App Modal");
 
   const hideModal = () => setModalIsOpen(false);
-  const showModal = (
-    modalBody: AppModalBody,
-    modalHeader?: AppModalHeader,
-    modalFooter?: AppModalFooter,
-    ...modalProps: ModalProps[]
-  ) => {
-    setModalLabel(label)
-    setModalHeader(modalHeader || null)
-    setModalFooter(modalFooter || null)
-    setModalBody(modalBody)
-    setModalProps(modalProps)
-    setModalIsOpen(true)
-  };
+
   const clearModal = () => {
     setModalBody(<></>)
     setModalHeader("")
     setModalFooter("")
+    setModalLabel("")
   }
+
   const toggleModal = () => setModalIsOpen(!modalIsOpen);
+
+  const showModal = (
+    modalBody: AppModalBody,
+    modalHeader?: AppModalHeader,
+    modalFooter?: AppModalFooter,
+    modalOptions?: ModalOptions,
+    modalLabel?: string
+  ) => {
+    setModalHeader(modalHeader || null)
+    setModalFooter(modalFooter || null)
+    setModalBody(modalBody)
+
+    modalOptions && Object.hasOwn(modalOptions, "modal")
+      ? setModalProps(modalOptions?.modal)
+      : setModalProps(modalOptions)
+    modalOptions?.header && setModalHeaderProps(modalOptions?.header)
+    modalOptions?.body && setModalBodyProps(modalOptions?.body)
+    modalOptions?.footer && setModalFooterProps(modalOptions?.footer)
+    modalOptions?.label
+      ? setModalLabel(modalOptions?.label)
+      : modalOptions?.modal?.label && setModalLabel(modalOptions?.modal?.label || "App Modal")
+
+    //setModalProps(modalOptions)
+    setModalIsOpen(true)
+  };
 
 
   return (
@@ -67,8 +94,13 @@ export const AppModalProvider: React.FC<Props> = ({ children }) => {
       modalBody,
       modalHeader,
       modalFooter,
-      label: "App Modal",
-      ...modalProps,
+      modalLabel: "App Modal",
+      modalOptions: {
+        modal: modalProps,
+        header: modalHeaderProps,
+        body: modalBodyProps,
+        footer: modalFooterProps,
+      },
       children
     }}>
       {children}
