@@ -69,15 +69,27 @@ export const AppModalProvider: React.FC<Props> = ({ children }) => {
     setModalFooter(modalFooter || null)
     setModalBody(modalBody)
 
-    modalOptions && Object.hasOwn(modalOptions, "modal")
-      ? setModalProps(modalOptions?.modal)
-      : setModalProps(modalOptions)
-    modalOptions?.header && setModalHeaderProps(modalOptions?.header)
-    modalOptions?.body && setModalBodyProps(modalOptions?.body)
-    modalOptions?.footer && setModalFooterProps(modalOptions?.footer)
+    modalOptions
+      ? modalOptions?.modal
+        ? setModalProps(modalOptions?.modal)
+        : setModalProps(modalOptions)
+      : setModalProps(undefined)
+
+    modalOptions?.header
+      ? setModalHeaderProps(modalOptions?.header)
+      : setModalHeaderProps(undefined)
+
+    modalOptions?.body
+      ? setModalBodyProps(modalOptions?.body)
+      : setModalBodyProps(undefined)
+
+    modalOptions?.footer
+      ? setModalFooterProps(modalOptions?.footer)
+      : setModalFooterProps(undefined)
+
     modalOptions?.label
       ? setModalLabel(modalOptions?.label)
-      : modalOptions?.modal?.label && setModalLabel(modalOptions?.modal?.label || "App Modal")
+      : modalOptions?.modal?.label && setModalLabel(modalOptions?.modal?.label || modalLabel)
 
     //setModalProps(modalOptions)
     setModalIsOpen(true)
@@ -94,7 +106,7 @@ export const AppModalProvider: React.FC<Props> = ({ children }) => {
       modalBody,
       modalHeader,
       modalFooter,
-      modalLabel: "App Modal",
+      modalLabel,
       modalOptions: {
         modal: modalProps,
         header: modalHeaderProps,

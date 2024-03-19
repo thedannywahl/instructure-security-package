@@ -13,6 +13,7 @@ export type ModalProps = {
   header: ComponentProps<typeof Modal.Header>,
   body: ComponentProps<typeof Modal.Body>,
   footer: ComponentProps<typeof Modal.Footer>
+  label: string
 };
 
 
@@ -49,15 +50,14 @@ export type ModalFooterProps = ComponentProps<typeof Modal.Footer>;
 /**
  * Type for passthrough params of INSTUI Modal components that accepts
  * properties for Modal, Modal.Body, Modal.Header, and Modal.Footer components.
- * @param Modal - Properties for the Modal component.
- * @param Body - Properties for the Body component.
- * @param Header - Properties for the Header component.
- * @param Footer - Properties for the Footer component.
- * @param 0 - Properties for the Modal component if not passed explicit Modal sub-component properties.
+ * @param modal - Properties for the Modal component.
+ * @param body - Properties for the Body component.
+ * @param header - Properties for the Header component.
+ * @param footer - Properties for the Footer component.
+ * @param label - An optional label for the Modal.
  */
-export type ModalOptions = (modal?: ModalModalProps, body?: ModalBodyProps, header?: ModalHeaderProps, footer?: ModalFooterProps, label?: string) => void | ModalModalProps 
-
-export type ShowModal = (modalBody: AppModalBody, modalHeader?: AppModalHeader, modalFooter?: AppModalFooter, modalOptions?: ModalOptions) => void;
+export type ModalOptions = ModalModalProps[] | ModalProps[] | undefined;
+export type ShowModal = (modalBody: AppModalBody, modalHeader?: AppModalHeader, modalFooter?: AppModalFooter, modalOptions?: ModalOptions, modalLabel?: string) => void;
 
 /**
  * Type for the content of the App Modal.
